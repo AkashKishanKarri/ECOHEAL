@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.cta {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #e6b800;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('https://source.unsplash.com/1600x900/?garden,organic') no-repeat center center/cover;
+    padding: 120px 20px;
+    color: white;
+}
+
+/* Color Changing Animation */
+@keyframes colorChange {
+    0% {
+        color: #ffcc00;
+    }
+
+    25% {
+        color: #ff5733;
+    }
+
+    50% {
+        color: #28a745;
+    }
+
+    75% {
+        color: #17a2b8;
+    }
+
+    100% {
+        color: #ffcc00;
+    }
+}
+
+.hero h1,
+.hero p {
+    font-size: 50px;
+    margin: 0;
+    animation: colorChange 4s infinite alternate;
+    transition: color 0.5s ease-in-out;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Fixing Button Position */
+.hero .cta {
+    display: inline-block;
+    background-color: #ffcc00;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* Added more spacing */
+    transition: background 0.3s ease-in-out;
+}
+
+.hero .cta:hover {
+    background-color: #e6b800;
+}
+
+/* Benefits Section */
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #b7e4c7;
+}
+
+.benefits h2 {
+    font-size: 32px;
+    color: #2d6a4f;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #40916c;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
